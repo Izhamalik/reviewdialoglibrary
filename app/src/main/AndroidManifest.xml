@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NativePractice"
+        tools:targetApi="31">
+        <activity
+            android:name=".BannerVarTwo"
+            android:exported="false" />
+        <activity
+            android:name=".BannerVarOne"
+            android:exported="false" />
+        <activity
+            android:name=".small.SmallVarThreeBottom"
+            android:exported="false" />
+        <activity
+            android:name=".small.SmallVarThreeTop"
+            android:exported="false" />
+        <activity
+            android:name=".small.SmallVarTwoBottom"
+            android:exported="false" />
+        <activity
+            android:name=".small.SmallVarTwoTop"
+            android:exported="false" />
+        <activity
+            android:name=".small.SmallVarOneBottom"
+            android:exported="false" />
+        <activity
+            android:name=".small.SmallVarOneTop"
+            android:exported="false" />
+        <activity
+            android:name=".medium.MediumVarOneBottom"
+            android:exported="false" />
+        <activity
+            android:name=".medium.MediumVarOneTop"
+            android:exported="false" />
+        <activity
+            android:name=".medium.MediumVarTwoTop"
+            android:exported="false" />
+        <activity
+            android:name=".medium.MediumVarTwoBottom"
+            android:exported="false" />
+        <activity
+            android:name=".medium.MediumVarThreeTop"
+            android:exported="false" />
+        <activity
+            android:name=".large.LargeVarThreeBottom"
+            android:exported="false" />
+        <activity
+            android:name=".large.LargeVarThreeTop"
+            android:exported="false" />
+        <activity
+            android:name=".large.LargeVarTwoBottom"
+            android:exported="false" />
+        <activity
+            android:name=".large.LargeVarTwoTop"
+            android:exported="false" />
+        <activity
+            android:name=".large.LargeVarOneBottom"
+            android:exported="false" />
+        <activity
+            android:name=".large.LargeVarOneTop"
+            android:exported="false" />
+        <activity
+            android:name=".medium.MediumVarThreeBottom"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
