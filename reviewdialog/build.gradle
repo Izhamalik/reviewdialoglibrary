@@ -38,13 +38,15 @@ android {
 
 publishing {
     publications {
-        base {
-            groupId "com.raing"
-            artifactId "reviewDialog"
-            version "0.9-alpha"
+        maven(MavenPublication) {
+            groupId = "com.raing"
+            artifactId = "reviewDialog"
+            version = "0.9-alpha"
+
         }
     }
 }
+
 
 dependencies {
 

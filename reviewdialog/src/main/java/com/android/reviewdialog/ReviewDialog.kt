@@ -63,7 +63,7 @@ object ReviewDialog {
 
     fun showRateusDialog(
         context: Context,
-        listOfDrawable: ArrayList<Drawable>,
+        listOfDrawable: ArrayList<Drawable?>,
         listOfUserName: ArrayList<String>,
         listOfReviews: ArrayList<String>
     ) {
@@ -145,7 +145,11 @@ object ReviewDialog {
             rateusdialog?.dismiss()
         }
 
-        rateusAdapter?.setListData(context, setuprateuslist(listOfDrawable , listOfReviews , listOfUserName))
+        if (listOfDrawable.isNotEmpty())
+            rateusAdapter?.setListData(
+                context,
+                setuprateuslist(listOfDrawable, listOfReviews, listOfUserName)
+            )
     }
 
 
@@ -168,7 +172,7 @@ object ReviewDialog {
 
 
     fun setuprateuslist(
-        listOfDrawable: ArrayList<Drawable>,
+        listOfDrawable: ArrayList<Drawable?>,
         listOfUserName: ArrayList<String>,
         listOfReviews: ArrayList<String>
     ): ArrayList<RateUsModel> {
